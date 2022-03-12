@@ -20,6 +20,16 @@
 		8309064027DD307900A12114 /* TMDBClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */; };
 		8309064F27DD347500A12114 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309064E27DD347500A12114 /* R.generated.swift */; };
 		8309065727DD35C300A12114 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8309065927DD35C300A12114 /* Localizable.strings */; };
+		8309066427DD3F8F00A12114 /* EnvironmentVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066327DD3F8F00A12114 /* EnvironmentVars.swift */; };
+		8309066727DD43F000A12114 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066627DD43F000A12114 /* Logger.swift */; };
+		8309066C27DD461800A12114 /* NetworkDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066827DD461800A12114 /* NetworkDataProvider.swift */; };
+		8309066D27DD461800A12114 /* PartnersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066927DD461800A12114 /* PartnersEncoding.swift */; };
+		8309066E27DD461800A12114 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066A27DD461800A12114 /* APIClientManager.swift */; };
+		8309066F27DD461800A12114 /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309066B27DD461800A12114 /* NetworkActivityIndicatorManager.swift */; };
+		8309067327DD47D700A12114 /* BaseApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309067227DD47D700A12114 /* BaseApiProtocol.swift */; };
+		8309067627DD51CB00A12114 /* SearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309067527DD51CB00A12114 /* SearchApi.swift */; };
+		8309067827DD530C00A12114 /* APIContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309067727DD530C00A12114 /* APIContants.swift */; };
+		8309067A27DD534100A12114 /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309067927DD534100A12114 /* ParameterKeys.swift */; };
 		89949E25D853F9550D302081 /* Pods_TMDBClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +72,17 @@
 		8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8309064E27DD347500A12114 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		8309065827DD35C300A12114 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8309066327DD3F8F00A12114 /* EnvironmentVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVars.swift; sourceTree = "<group>"; };
+		8309066527DD406F00A12114 /* TMDBClient.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TMDBClient.xcconfig; sourceTree = "<group>"; };
+		8309066627DD43F000A12114 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		8309066827DD461800A12114 /* NetworkDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataProvider.swift; sourceTree = "<group>"; };
+		8309066927DD461800A12114 /* PartnersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersEncoding.swift; sourceTree = "<group>"; };
+		8309066A27DD461800A12114 /* APIClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
+		8309066B27DD461800A12114 /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
+		8309067227DD47D700A12114 /* BaseApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProtocol.swift; sourceTree = "<group>"; };
+		8309067527DD51CB00A12114 /* SearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchApi.swift; sourceTree = "<group>"; };
+		8309067727DD530C00A12114 /* APIContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIContants.swift; sourceTree = "<group>"; };
+		8309067927DD534100A12114 /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
 		BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClientTests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient/Pods-TMDBClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +166,10 @@
 		8309061B27DD307500A12114 /* TMDBClient */ = {
 			isa = PBXGroup;
 			children = (
+				8309067127DD47C000A12114 /* API Client */,
+				8309067027DD47B300A12114 /* Networking */,
+				8309066627DD43F000A12114 /* Logger.swift */,
+				8309066327DD3F8F00A12114 /* EnvironmentVars.swift */,
 				8309061C27DD307500A12114 /* AppDelegate.swift */,
 				8309061E27DD307500A12114 /* SceneDelegate.swift */,
 				8309062027DD307500A12114 /* ViewController.swift */,
@@ -152,6 +177,7 @@
 				8309062527DD307800A12114 /* Assets.xcassets */,
 				8309062727DD307800A12114 /* LaunchScreen.storyboard */,
 				8309062A27DD307800A12114 /* Info.plist */,
+				8309066527DD406F00A12114 /* TMDBClient.xcconfig */,
 			);
 			path = TMDBClient;
 			sourceTree = "<group>";
@@ -187,6 +213,36 @@
 				8309065927DD35C300A12114 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		8309067027DD47B300A12114 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8309067227DD47D700A12114 /* BaseApiProtocol.swift */,
+				8309066A27DD461800A12114 /* APIClientManager.swift */,
+				8309066B27DD461800A12114 /* NetworkActivityIndicatorManager.swift */,
+				8309066827DD461800A12114 /* NetworkDataProvider.swift */,
+				8309066927DD461800A12114 /* PartnersEncoding.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8309067127DD47C000A12114 /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				8309067727DD530C00A12114 /* APIContants.swift */,
+				8309067927DD534100A12114 /* ParameterKeys.swift */,
+				8309067427DD51B200A12114 /* SearchAPI */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
+		8309067427DD51B200A12114 /* SearchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8309067527DD51CB00A12114 /* SearchApi.swift */,
+			);
+			path = SearchAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,10 +540,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8309066427DD3F8F00A12114 /* EnvironmentVars.swift in Sources */,
 				8309062127DD307500A12114 /* ViewController.swift in Sources */,
 				8309061D27DD307500A12114 /* AppDelegate.swift in Sources */,
+				8309067A27DD534100A12114 /* ParameterKeys.swift in Sources */,
+				8309067827DD530C00A12114 /* APIContants.swift in Sources */,
+				8309066727DD43F000A12114 /* Logger.swift in Sources */,
 				8309061F27DD307500A12114 /* SceneDelegate.swift in Sources */,
+				8309066C27DD461800A12114 /* NetworkDataProvider.swift in Sources */,
+				8309067327DD47D700A12114 /* BaseApiProtocol.swift in Sources */,
 				8309064F27DD347500A12114 /* R.generated.swift in Sources */,
+				8309066D27DD461800A12114 /* PartnersEncoding.swift in Sources */,
+				8309066E27DD461800A12114 /* APIClientManager.swift in Sources */,
+				8309067627DD51CB00A12114 /* SearchApi.swift in Sources */,
+				8309066F27DD461800A12114 /* NetworkActivityIndicatorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +619,7 @@
 /* Begin XCBuildConfiguration section */
 		8309064127DD307900A12114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8309066527DD406F00A12114 /* TMDBClient.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -614,6 +681,7 @@
 		};
 		8309064227DD307900A12114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8309066527DD406F00A12114 /* TMDBClient.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleName</key>
+	<string>$(APP_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>Scheme</key>
+	<string>$(SCHEME)</string>
+	<key>APIToken</key>
+	<string>$(API_TOKEN)</string>
+	<key>APIVersion</key>
+	<string>$(API_VERSION)</string>
+	<key>ApiBaseURL</key>
+	<string>${API_BASE_URL}</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

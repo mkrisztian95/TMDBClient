@@ -1,4 +1,6 @@
 excluded:
   - Pods
   - R.generated.swift
-line_length: 120
+line_length:
+  warning: 220
+  ignores_comments: true

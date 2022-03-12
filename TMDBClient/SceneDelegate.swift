@@ -6,7 +6,6 @@
 //
 
 import UIKit
-// swiftlint:disable line_length
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -47,4 +46,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 }
-// swiftlint:enable line_length

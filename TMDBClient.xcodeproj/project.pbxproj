@@ -19,6 +19,7 @@
 		8309063E27DD307900A12114 /* TMDBClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063D27DD307900A12114 /* TMDBClientUITests.swift */; };
 		8309064027DD307900A12114 /* TMDBClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */; };
 		8309064F27DD347500A12114 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309064E27DD347500A12114 /* R.generated.swift */; };
+		8309065727DD35C300A12114 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8309065927DD35C300A12114 /* Localizable.strings */; };
 		89949E25D853F9550D302081 /* Pods_TMDBClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		8309063D27DD307900A12114 /* TMDBClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITests.swift; sourceTree = "<group>"; };
 		8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8309064E27DD347500A12114 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8309065827DD35C300A12114 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClientTests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient/Pods-TMDBClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		8309061027DD307500A12114 = {
 			isa = PBXGroup;
 			children = (
+				8309065027DD351A00A12114 /* Localization */,
 				8309064D27DD345E00A12114 /* Supporting Files */,
 				8309061B27DD307500A12114 /* TMDBClient */,
 				8309063227DD307900A12114 /* TMDBClientTests */,
@@ -178,6 +181,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8309065027DD351A00A12114 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				8309065927DD35C300A12114 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +201,8 @@
 				8309061527DD307500A12114 /* Sources */,
 				8309061627DD307500A12114 /* Frameworks */,
 				8309061727DD307500A12114 /* Resources */,
+				5DB53B919C3137A556BD9C9B /* [CP] Embed Pods Frameworks */,
+				8309065A27DD3BC600A12114 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8309062927DD307800A12114 /* LaunchScreen.storyboard in Resources */,
+				8309065727DD35C300A12114 /* Localizable.strings in Resources */,
 				8309062627DD307800A12114 /* Assets.xcassets in Resources */,
 				8309062427DD307500A12114 /* Main.storyboard in Resources */,
 			);
@@ -350,9 +364,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5DB53B919C3137A556BD9C9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClient/Pods-TMDBClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClient/Pods-TMDBClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBClient/Pods-TMDBClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8309064C27DD33C600A12114 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -367,7 +397,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		8309065A27DD3BC600A12114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		97EDA3E2FE76A369A301C326 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -491,6 +538,14 @@
 				8309062827DD307800A12114 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8309065927DD35C300A12114 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8309065827DD35C300A12114 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -628,6 +683,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,6 +713,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

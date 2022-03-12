@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A3A49555696753C9C0655D /* Pods_TMDBClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE62E1901BB31006C6D8CB8 /* Pods_TMDBClient.framework */; };
+		7A3DE4AA9D8058E4D580F389 /* Pods_TMDBClient_TMDBClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EE8C323D4CBAD3CABF8271 /* Pods_TMDBClient_TMDBClientUITests.framework */; };
 		8309061D27DD307500A12114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309061C27DD307500A12114 /* AppDelegate.swift */; };
 		8309061F27DD307500A12114 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309061E27DD307500A12114 /* SceneDelegate.swift */; };
 		8309062127DD307500A12114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309062027DD307500A12114 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		8309063427DD307900A12114 /* TMDBClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063327DD307900A12114 /* TMDBClientTests.swift */; };
 		8309063E27DD307900A12114 /* TMDBClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063D27DD307900A12114 /* TMDBClientUITests.swift */; };
 		8309064027DD307900A12114 /* TMDBClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */; };
+		89949E25D853F9550D302081 /* Pods_TMDBClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18EE8C323D4CBAD3CABF8271 /* Pods_TMDBClient_TMDBClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBClient_TMDBClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233374B5B21604393625A4B2 /* Pods-TMDBClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClientTests.debug.xcconfig"; path = "Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DE62E1901BB31006C6D8CB8 /* Pods_TMDBClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6252D25C11E14EF3A8FE0C5C /* Pods-TMDBClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient.debug.xcconfig"; path = "Target Support Files/Pods-TMDBClient/Pods-TMDBClient.debug.xcconfig"; sourceTree = "<group>"; };
+		6FCBDE7EEF3AF5E47C383D8C /* Pods-TMDBClient-TMDBClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient-TMDBClientUITests.debug.xcconfig"; path = "Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8309061927DD307500A12114 /* TMDBClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8309061C27DD307500A12114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8309061E27DD307500A12114 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		8309063927DD307900A12114 /* TMDBClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8309063D27DD307900A12114 /* TMDBClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITests.swift; sourceTree = "<group>"; };
 		8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClientTests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient/Pods-TMDBClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A3A49555696753C9C0655D /* Pods_TMDBClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89949E25D853F9550D302081 /* Pods_TMDBClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3DE4AA9D8058E4D580F389 /* Pods_TMDBClient_TMDBClientUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		274985F471B6809E5E4A0E04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6252D25C11E14EF3A8FE0C5C /* Pods-TMDBClient.debug.xcconfig */,
+				DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */,
+				6FCBDE7EEF3AF5E47C383D8C /* Pods-TMDBClient-TMDBClientUITests.debug.xcconfig */,
+				BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */,
+				233374B5B21604393625A4B2 /* Pods-TMDBClientTests.debug.xcconfig */,
+				C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7DF860FB58012545D1BF66AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE62E1901BB31006C6D8CB8 /* Pods_TMDBClient.framework */,
+				18EE8C323D4CBAD3CABF8271 /* Pods_TMDBClient_TMDBClientUITests.framework */,
+				5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8309061027DD307500A12114 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				8309063227DD307900A12114 /* TMDBClientTests */,
 				8309063C27DD307900A12114 /* TMDBClientUITests */,
 				8309061A27DD307500A12114 /* Products */,
+				274985F471B6809E5E4A0E04 /* Pods */,
+				7DF860FB58012545D1BF66AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8309064327DD307900A12114 /* Build configuration list for PBXNativeTarget "TMDBClient" */;
 			buildPhases = (
+				351CCD617DFAFC39A7624D29 /* [CP] Check Pods Manifest.lock */,
 				8309061527DD307500A12114 /* Sources */,
 				8309061627DD307500A12114 /* Frameworks */,
 				8309061727DD307500A12114 /* Resources */,
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8309064627DD307900A12114 /* Build configuration list for PBXNativeTarget "TMDBClientTests" */;
 			buildPhases = (
+				E5BFFB0A5F93094C6703CB2B /* [CP] Check Pods Manifest.lock */,
 				8309062B27DD307900A12114 /* Sources */,
 				8309062C27DD307900A12114 /* Frameworks */,
 				8309062D27DD307900A12114 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8309064927DD307900A12114 /* Build configuration list for PBXNativeTarget "TMDBClientUITests" */;
 			buildPhases = (
+				97EDA3E2FE76A369A301C326 /* [CP] Check Pods Manifest.lock */,
 				8309063527DD307900A12114 /* Sources */,
 				8309063627DD307900A12114 /* Frameworks */,
 				8309063727DD307900A12114 /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		351CCD617DFAFC39A7624D29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDBClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97EDA3E2FE76A369A301C326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDBClient-TMDBClientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5BFFB0A5F93094C6703CB2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDBClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8309061527DD307500A12114 /* Sources */ = {
@@ -434,6 +547,7 @@
 		};
 		8309064427DD307900A12114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6252D25C11E14EF3A8FE0C5C /* Pods-TMDBClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +576,7 @@
 		};
 		8309064527DD307900A12114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +605,7 @@
 		};
 		8309064727DD307900A12114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233374B5B21604393625A4B2 /* Pods-TMDBClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +631,7 @@
 		};
 		8309064827DD307900A12114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +657,7 @@
 		};
 		8309064A27DD307900A12114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCBDE7EEF3AF5E47C383D8C /* Pods-TMDBClient-TMDBClientUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +681,7 @@
 		};
 		8309064B27DD307900A12114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

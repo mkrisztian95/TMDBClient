@@ -18,6 +18,7 @@
 		8309063427DD307900A12114 /* TMDBClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063327DD307900A12114 /* TMDBClientTests.swift */; };
 		8309063E27DD307900A12114 /* TMDBClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063D27DD307900A12114 /* TMDBClientUITests.swift */; };
 		8309064027DD307900A12114 /* TMDBClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */; };
+		8309064F27DD347500A12114 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309064E27DD347500A12114 /* R.generated.swift */; };
 		89949E25D853F9550D302081 /* Pods_TMDBClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710D6DC063700FBD2AC03B0 /* Pods_TMDBClientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		8309063927DD307900A12114 /* TMDBClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8309063D27DD307900A12114 /* TMDBClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITests.swift; sourceTree = "<group>"; };
 		8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8309064E27DD347500A12114 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		BF61F4104481CE386AE1C01C /* Pods-TMDBClient-TMDBClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClientTests.release.xcconfig"; path = "Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBE508B0BD6122C6249ED24A /* Pods-TMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBClient.release.xcconfig"; path = "Target Support Files/Pods-TMDBClient/Pods-TMDBClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				233374B5B21604393625A4B2 /* Pods-TMDBClientTests.debug.xcconfig */,
 				C9365562300713DD2E3E4586 /* Pods-TMDBClientTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +119,7 @@
 		8309061027DD307500A12114 = {
 			isa = PBXGroup;
 			children = (
+				8309064D27DD345E00A12114 /* Supporting Files */,
 				8309061B27DD307500A12114 /* TMDBClient */,
 				8309063227DD307900A12114 /* TMDBClientTests */,
 				8309063C27DD307900A12114 /* TMDBClientUITests */,
@@ -168,6 +170,14 @@
 			path = TMDBClientUITests;
 			sourceTree = "<group>";
 		};
+		8309064D27DD345E00A12114 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8309064E27DD347500A12114 /* R.generated.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +186,7 @@
 			buildConfigurationList = 8309064327DD307900A12114 /* Build configuration list for PBXNativeTarget "TMDBClient" */;
 			buildPhases = (
 				351CCD617DFAFC39A7624D29 /* [CP] Check Pods Manifest.lock */,
+				8309064C27DD33C600A12114 /* ShellScript */,
 				8309061527DD307500A12114 /* Sources */,
 				8309061627DD307500A12114 /* Frameworks */,
 				8309061727DD307500A12114 /* Resources */,
@@ -197,6 +208,7 @@
 				8309062B27DD307900A12114 /* Sources */,
 				8309062C27DD307900A12114 /* Frameworks */,
 				8309062D27DD307900A12114 /* Resources */,
+				4A523DEAF6554F64D170CDF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +228,7 @@
 				8309063527DD307900A12114 /* Sources */,
 				8309063627DD307900A12114 /* Frameworks */,
 				8309063727DD307900A12114 /* Resources */,
+				D1418D06BC6AC332E1403990 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +333,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4A523DEAF6554F64D170CDF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBClientTests/Pods-TMDBClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8309064C27DD33C600A12114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		97EDA3E2FE76A369A301C326 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +389,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1418D06BC6AC332E1403990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBClient-TMDBClientUITests/Pods-TMDBClient-TMDBClientUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E5BFFB0A5F93094C6703CB2B /* [CP] Check Pods Manifest.lock */ = {
@@ -374,6 +440,7 @@
 				8309062127DD307500A12114 /* ViewController.swift in Sources */,
 				8309061D27DD307500A12114 /* AppDelegate.swift in Sources */,
 				8309061F27DD307500A12114 /* SceneDelegate.swift in Sources */,
+				8309064F27DD347500A12114 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,18 @@
+//
+//  TMDBClient.xcconfig
+//  TMDBClient
+//
+//  Created by Chris on 12.03.2022.
+//
+
+// API
+API_VERSION = 3
+API_BASE_URL = api.themoviedb.org
+
+// APP SETTINGS
+APP_NAME = TMDB Client
+APP_BUNDLE_ID = com.app.TMDBClient
+SCHEME = TMDBClient
+
+// API TOKEN
+API_TOKEN = 555dd34b51d2f5b7f9fdb39e04986933

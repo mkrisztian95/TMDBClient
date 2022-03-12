@@ -4,6 +4,9 @@
 def common_pods
   pod 'R.swift'
   pod 'SwiftLint'
+  pod 'BrightFutures'
+  pod 'ObjectMapper'
+  pod 'Alamofire'
 end
 
 target 'TMDBClient' do

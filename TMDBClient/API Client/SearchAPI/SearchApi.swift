@@ -17,8 +17,9 @@ class SearchAPI: APIClientManager, BaseApiProtocol {
 
     var parameters: [String: AnyObject]? = [ParameterKeys.Token.tokenKey: EnvironmentVars.apiToken] as [String: AnyObject]
 
-    func performSearchRequest(with value: String) -> Future<Any, Error> {
+    func performSearchRequest(with value: String, page: Int = 1) -> Future<SearchResultWrapper, Error> {
         parameters?[ParameterKeys.Search.query] = value as AnyObject
-        return getData(path, params: parameters, method: .get, encoding: PartnersEncoding())
+        parameters?[ParameterKeys.Search.page] = page as AnyObject
+        return getObject(path, params: parameters, method: method, encoding: PartnersEncoding())
     }
 }

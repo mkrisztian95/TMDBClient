@@ -4,3 +4,7 @@ excluded:
 line_length:
   warning: 220
   ignores_comments: true
+identifier_name:
+  min_length: 2
+nesting:
+  type_level: 3

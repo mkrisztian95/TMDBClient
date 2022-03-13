@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Movie Details View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MovieDetailsView" customModule="TMDBClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-Pf-W3n">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZM-LD-Y8g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.48642214956313279" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-base-header" translatesAutoresizingMaskIntoConstraints="NO" id="axx-k4-aov">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="338"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbu-CV-oj9">
+                                <rect key="frame" x="15" y="84" width="384" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-ul-NYT">
+                                <rect key="frame" x="25" y="129.5" width="364" height="766.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="upa-YB-kgU">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="hjC-dh-TpN"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="MRf-wp-03s"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMG-rk-Mdq">
+                                <rect key="frame" x="25" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Dyc-bp-RCC"/>
+                                    <constraint firstAttribute="height" constant="40" id="kSh-zx-CPD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ico-back"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="d6T-3N-4or"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nan-ul-NYT" firstAttribute="top" secondItem="jbu-CV-oj9" secondAttribute="bottom" constant="20" id="4pA-Aa-0Aw"/>
+                            <constraint firstItem="VdX-Pf-W3n" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7NY-V5-L8i"/>
+                            <constraint firstItem="VdX-Pf-W3n" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="7OD-xc-JiI"/>
+                            <constraint firstItem="Nan-ul-NYT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="80P-Sb-mIT"/>
+                            <constraint firstAttribute="bottom" secondItem="VdX-Pf-W3n" secondAttribute="bottom" id="F22-YR-Wa2"/>
+                            <constraint firstItem="axx-k4-aov" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GqT-x1-MVB"/>
+                            <constraint firstItem="VdX-Pf-W3n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IEr-be-iWe"/>
+                            <constraint firstItem="jbu-CV-oj9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="M9t-O8-xWj"/>
+                            <constraint firstItem="axx-k4-aov" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OTt-hU-8xN"/>
+                            <constraint firstItem="hMG-rk-Mdq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="QbU-W2-wah"/>
+                            <constraint firstItem="qZM-LD-Y8g" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="UH9-5q-ogP"/>
+                            <constraint firstItem="hMG-rk-Mdq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Yl6-pd-W62"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nan-ul-NYT" secondAttribute="trailing" constant="25" id="ZIh-TY-Yb8"/>
+                            <constraint firstAttribute="bottom" secondItem="qZM-LD-Y8g" secondAttribute="bottom" id="Zng-Ik-iui"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="axx-k4-aov" secondAttribute="trailing" id="aJX-CC-RN3"/>
+                            <constraint firstItem="jbu-CV-oj9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="cQi-Kj-bBs"/>
+                            <constraint firstItem="qZM-LD-Y8g" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="dVr-6a-J4z"/>
+                            <constraint firstItem="qZM-LD-Y8g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eJn-m1-VSZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Nan-ul-NYT" secondAttribute="bottom" id="hUp-pq-aCV"/>
+                            <constraint firstItem="jbu-CV-oj9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="mS1-rb-lzm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jbu-CV-oj9" secondAttribute="trailing" constant="15" id="mz1-yb-P4z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="VdX-Pf-W3n" id="3fH-aK-lFa"/>
+                        <outlet property="detailsCollection" destination="Nan-ul-NYT" id="5fZ-eB-cxe"/>
+                        <outlet property="titleLabel" destination="jbu-CV-oj9" id="rY4-LZ-iB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico-back" width="20.5" height="18"/>
+        <image name="ico-base-header" width="390" height="338"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

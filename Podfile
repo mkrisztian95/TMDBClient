@@ -7,6 +7,8 @@ def common_pods
   pod 'BrightFutures'
   pod 'ObjectMapper'
   pod 'Alamofire'
+  pod 'Kingfisher', '~> 7.0'
+  pod 'AARatingBar'
 end
 
 target 'TMDBClient' do

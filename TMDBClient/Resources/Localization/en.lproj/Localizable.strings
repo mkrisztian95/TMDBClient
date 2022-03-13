@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TMDBClient
+
+  Created by Chris on 12.03.2022.
+  
+*/
+"overview" = "Overview:";
+"popularity" = "Popularity:";
+"releaseDate" = "Release:";
+"budget" = "Budget:";
+"productions" = "Productions:";
+"revenue" = "Revenue:";
+"vote" = "Vote:";

@@ -54,7 +54,8 @@ class SearchView: UIViewController {
     private func handle(keyboardShowNotification notification: Notification) {
         if !isCollapsed, !isKeyboardOpened, let userInfo = notification.userInfo,
             let keyboardRectangle = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
-            UIView.animate(withDuration: Constants.animationDuration) {
+            UIView.animate(withDuration: Constants.animationDuration) { [weak self]  in
+                guard let self = self else { return }
                 [self.titleLabel, self.subtitleLabel].forEach { label in
                     label?.layer.opacity = 0
                     label?.transform = CGAffineTransform(scaleX: Constants.TitleLabel.xTransform, y: Constants.TitleLabel.yTransform)
@@ -62,7 +63,8 @@ class SearchView: UIViewController {
                 self.mainViewBottomConstraint.constant += keyboardRectangle.height
                 self.robotHeight.constant /= Constants.robotHeightCoeff
                 self.view.layoutIfNeeded()
-            } completion: { _ in
+            } completion: { [weak self] _ in
+                guard let self = self else { return }
                 [self.titleLabel, self.subtitleLabel].forEach { label in
                     label?.isHidden = true
                 }
@@ -99,7 +101,8 @@ extension SearchView: SearchViewActions {
         self.isCollapsed = true
         self.searchTextField.endEditing(true)
         self.submitButton.isHidden = true
-        UIView.animate(withDuration: Constants.animationDuration) {
+        UIView.animate(withDuration: Constants.animationDuration) { [weak self] in
+            guard let self = self else { return }
             self.mainView.leftBottomRadius = Constants.ClosedHeader.mainViewBottomRadius
             self.mainView.rightBottomRadius = Constants.ClosedHeader.mainViewBottomRadius
             self.robotIcoTop.constant = Constants.ClosedHeader.RobotIcon.topInset
@@ -112,7 +115,8 @@ extension SearchView: SearchViewActions {
             self.view.bringSubviewToFront(self.mainView)
             self.view.bringSubviewToFront(self.collectionViewContainer)
             self.view.layoutIfNeeded()
-        } completion: { _ in
+        } completion: { [weak self] _ in
+            guard let self = self else { return }
             self.collectionViewContainer.isHidden = false
         }
     }

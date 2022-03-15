@@ -44,16 +44,17 @@ final class SearchPresenter: SearchAction {
 
     func updateSearchRequest(with text: String) {
         SearchAPI().performSearchRequest(with: text, page: currentPage)
-            .onSuccess { wrapper in
+            .onSuccess {[weak self] wrapper in
+                guard let strongSelf = self else { return }
                 if let result = wrapper.results {
-                    self.moviesVM.append(contentsOf: result.map({ item in
+                    strongSelf.moviesVM.append(contentsOf: result.map({ item in
                         return MovieCellViewModel(model: item)
                     }))
-                    self.view.setState()
+                    strongSelf.view.setState()
                 }
             }
-            .onComplete { _ in
-                self.view.closeToHeader()
+            .onComplete {[weak self] _ in
+                self?.view.closeToHeader()
             }
             .onFailure { err in
                 Logger.logError(err: err)

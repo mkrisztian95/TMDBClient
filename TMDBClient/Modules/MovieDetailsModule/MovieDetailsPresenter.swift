@@ -26,8 +26,9 @@ final class MovieDetailsPresenter: MovieDetailsAction {
 
     func configureView() {
         MovieDetilsApi(movieId: movieId).getMovieDetails()
-            .onSuccess { model in
-                self.view.setState(vm: .init(model: model))
+            .onSuccess {[weak self] model in
+                guard let strongSelf = self else { return }
+                strongSelf.view.setState(vm: .init(model: model))
             }
             .onFailure { err in
                 Logger.logError(err: err)
